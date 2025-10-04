@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QT Rewired - Discord Theme</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), /* overlay preto 50% */
+                url('background.jpg') no-repeat center center fixed;;
+            background-size: cover;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            animation: fadeInBg 2s ease-in forwards;
+        }
+
+        @keyframes fadeInBg {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            padding: 60px 20px;
+            background: rgba(17, 17, 17, 0.8);
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+            overflow: hidden;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            font-weight: bold;
+            transform: translateY(100%);
+            opacity: 0;
+            animation: slideUp 1.2s ease-out forwards 0.5s;
+        }
+        header p {
+            font-size: 1.4em;
+            margin-top: 12px;
+            color: #eee;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInText 1s ease-out forwards 1.4s;
+        }
+
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+        nav a {
+            color: #ccc;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff4081;
+        }
+        .qt-icon {
+            width: 22px;
+            height: 22px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .screenshot img {
+            max-width: 85%;
+            border-radius: 15px;
+            margin: 40px auto;
+            display: block;
+            box-shadow: 0 0 25px rgba(0,0,0,0.7);
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            line-height: 1.7;
+            background: rgba(0,0,0,0.6);
+            border-radius: 12px;
+        }
+        .content h2 {
+            color: #ff4081;
+            margin-top: 40px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+        }
+        .download-btn {
+            display: inline-block;
+            margin: 40px 0;
+            padding: 18px 40px;
+            background: linear-gradient(90deg, #ff4081, #9c27b0);
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3em;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: opacity 0.3s, transform 0.2s;
+        }
+        .download-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        footer {
+            margin-top: 60px;
+            padding: 25px;
+            background: #111;
+            font-size: 0.95em;
+            color: #aaa;
+            text-align: center;
+            border-top: 2px solid #222;
+        }
+        .status-online {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .status-offline {
+            color: #9E9E9E;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QT Rewired</h1>
+        <p>The only QT-Theme Discord theme for you</p>
+    </header>
+
+    <nav>
+        <a href="#about"><img src="QT.png" class="qt-icon">Sobre</a>
+        <a href="#features">Recursos</a>
+        <a href="#install">Instalação</a>
+        <a href="#download">Download</a>
+    </nav>
+
+    <section class="screenshot">
+        <img src="print.png" alt="Screenshot do tema QT Rewired no Discord">
+    </section>
+
+    <section class="content" id="about">
+        <h2>Sobre o Tema</h2>
+        <p>O <strong>QT Rewired</strong> é um tema personalizado para Discord inspirado na personagem <strong>QT</strong> do mod <em><a href="https://gamebanana.com/mods/566597" target="_blank">QT Rewired</a></em>. Desenvolvido com base no famoso tema <strong>Clear Vision</strong>, ele traz uma estética futurista e imersiva, unindo minimalismo e cores vibrantes.</p>
+    </section>
+
+    <section class="content" id="features">
+        <h2>Alterações do Tema</h2>
+        <ul>
+            <li>✔️ Cor primária trocada</li>
+            <li>✔️ Background original do Clear Vision substituído</li>
+            <li>✔️ Cor secundária trocada</li>
+            <li>✔️ Cor do status <span class="status-online">Online</span> trocada</li>
+            <li>✔️ Cor do status <span class="status-offline">Offline</span> trocada</li>
+            <li>✔️ Ícone do Discord no primeiro botão substituído pelo ícone da QT</li>
+            <li>✔️ Fonte trocada para <span style="font-family:'JetBrains Mono', monospace;">JetBrains Mono</span></li>
+        </ul>
+    </section>
+
+    <section class="content" id="install">
+        <h2>Como Instalar</h2>
+        <ol>
+            <li>Baixe o tema clicando no botão de download abaixo.</li>
+            <li>Instale o <a href="https://betterdiscord.app/" target="_blank">BetterDiscord</a> ou <a href="https://vencord.dev/" target="_blank">Vencord</a>.</li>
+            <li>Coloque o arquivo do tema na pasta de temas (<code>Configurações > Temas > Abrir Pasta de Temas</code>).</li>
+            <li>Ative o tema no cliente e aproveite.</li>
+        </ol>
+    </section>
+
+    <section class="content" id="download" style="text-align:center;">
+        <a class="download-btn" href="#">⬇️ Baixar QT Rewired</a>
+    </section>
+	
+    <footer>
+        <p>QT Rewired Theme © 2025 | Inspirado no Clear Vision e na personagem QT do mod QT Rewired.</p>
+        <p>Créditos: <a href="https://betterdiscord.app/theme/ClearVision" target="_blank">Tema original Clear Vision</a></p>
+        <p>Desenvolvido com ❤ pela comunidade. Um "Over Engineer" framework de estética para Discord.</p>
+    </footer>
+</body>
+</html>
